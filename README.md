@@ -41,11 +41,3 @@ Given a map of dimensions `N x M`, the goal is to:
 
 - No use of `pickBeeper()`.
 - The beeper map is calculated mathematically and placed directly.
-
-## Author
-
-Ahmad Nabeel Al-Jaber
-
-## Acknowledgement
-
-Thanks for reviewing the approach and strategies explored in this problem.
