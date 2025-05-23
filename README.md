@@ -1,4 +1,4 @@
-# Karel Chamber Divider
+# Karel The Robot
 
 This project explores and implements an optimized algorithm for dividing a 2D grid map into 4 equal-sized chambers using Karel the Robot. The challenge lies in placing the minimum number of beepers on various grid sizes to achieve equally sized partitions.
 
@@ -25,27 +25,17 @@ Given a map of dimensions `N x M`, the goal is to:
 
 - Maximum chamber size:
 
-  \[
-  	ext{Chamber Size} = \left\lfloor rac{N 	imes M - (N + M - 2)}{4} 
-ight
-floor
-  \]
+  Chamber Size = floor((N × M - (N + M - 2)) / 4)
 
 - Removable beepers (for Even × Odd):
 
-  \[
-  \left\lfloor rac{	ext{Odd side length} - 1}{4} 
-ight
-floor
-  \]
+  Removable Beepers = floor((Odd side length - 1) / 4)
 
 - Beepers to move (for Even × Even):
 
-  \[
-  rac{|a - b|}{2}, 	ext{ where } a = \left(rac{N}{2} - 1
-ight) \cdot rac{M}{2},\quad b = rac{N}{2} \cdot \left(rac{M}{2} - 1
-ight)
-  \]
+  a = ((N / 2) - 1) * (M / 2)  
+  b = (N / 2) * ((M / 2) - 1)  
+  Beepers to move = |a - b| / 2
 
 ## Implementation Notes
 
